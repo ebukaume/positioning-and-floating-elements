@@ -15,7 +15,7 @@ nav {
   justify-content: flex-start;
   align-items: center;
   border-bottom: 1px solid rgb(243, 243, 243);
-  z-index:3;
+  z-index: 3;
   background-color: white;
 }
 
@@ -85,8 +85,6 @@ header h1 {
   color: #121212;
   font-weight: 700;
   font-style: italic;
-
-
 }
 header div {
   margin: 0 auto;
@@ -103,12 +101,10 @@ article {
   width: 80%;
   height: 100%;
   float: left;
-
 }
 .editors-pick-vertial {
   width: 20%;
   height: 1000px;
-  background: #803;
   float: right;
 }
 
@@ -153,17 +149,17 @@ footer {
   margin: 0 auto;
 }
 
-header > div >p{
+header > div > p {
   color: #666;
-  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  font-family: nyt-imperial, georgia, "times new roman", times, serif;
   text-align: left;
   font-size: 14px;
 }
-.light-gray{
-color: #888;
-font-size: 13px;
+.light-gray {
+  color: #888;
+  font-size: 13px;
 }
-.social-media{
+.social-media {
   width: 27px;
   background-color: #eee;
   text-align: center;
@@ -171,60 +167,182 @@ font-size: 13px;
   padding: 5px;
   vertical-align: middle;
   border: 1px solid #eee;
-   float: right;
-   margin-left: 15px;
+  float: right;
+  margin-left: 15px;
 }
-.social-media:hover{
+.social-media:hover {
   background-color: white;
   cursor: pointer;
 }
-article > section{
+article > section {
   margin-left: 33%;
   margin-right: 100px;
 }
-#by-dennis >h3 >span{
+#by-dennis > h3 > span {
   text-decoration: underline;
-  text-decoration-color:#ccc;
+  text-decoration-color: #ccc;
   color: #333;
 }
-#by-dennis >h3 >span:hover{
+#by-dennis > h3 > span:hover {
   text-decoration: none;
 }
 
-article >section:nth-of-type(1) span:nth-of-type(1){
- color: #333;
- font-weight: 100;
-
+article > section:nth-of-type(1) span:nth-of-type(1) {
+  color: #333;
+  font-weight: 100;
 }
-.content{
-  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+.content {
+  font-family: nyt-imperial, georgia, "times new roman", times, serif;
   font-size: 17px;
   color: #222;
 }
-.in-inflation > *{
- float: left;
- font-size: 14px;
- line-height: 17px;
- font-weight: 300;
- font-family: font-family: nyt-franklin,arial,helvetica,sans-serif;
- width: 163px;
- height: 300px;
- margin:15px;
- margin-left: 0;
-
+.in-inflation > * {
+  float: left;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 300;
+  font-family: nyt-franklin, arial, helvetica, sans-serif;
+  width: 162px;
+  height: 300px;
+  margin: 10px 13px 50px 0;
 }
-.in-inflation > div:nth-child(4n){
+.in-inflation > div:nth-child(4n) {
   width: 70px;
   overflow: hidden;
   margin-right: 0;
 }
-h3 ,strong{
+h3,
+strong {
   color: black;
 }
-img[src*="inflation"]{
+img[src*="inflation"] {
   height: 95px;
 }
-.in-inflation::after{
-  clear: both;
+.in-inflation::after {
   content: "";
+  clear: both;
+}
+hr {
+  max-width: 85px;
+  margin-left: 0;
+  border-top: 1px solid black;
+  text-align: left;
+}
+hr + p {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: nyt-franklin, arial, helvetica, sans-serif;
+}
+iframe {
+  margin-top: 30px;
+  width: 560px;
+  height: 315px;
+  border: 0;
+}
+p.caption {
+  color: #555;
+  margin-top: 4px;
+}
+
+img[src*="telescope"] {
+  height: 400px;
+}
+
+.article-footer a {
+  text-decoration: none;
+  color: #888;
+}
+.article-footer a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 30px;
+}
+button {
+  height: 36px;
+  background-color: rgb(98, 136, 165);
+  color: white;
+  font-weight: 600;
+  margin: auto;
+  padding: 5px 0px;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid rgb(50, 104, 145);
+}
+.footer > button {
+  width: 330px;
+}
+
+button:hover {
+  background-color: rgb(50, 104, 145);
+}
+
+#bottom {
+  margin-top: 800px;
+}
+.editors-pick-vertial > div#top > h2 {
+  font-size: 14px;
+  color: black;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  font-weight: 700;
+  line-height: 14px;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+}
+
+.editors-pick-vertial > div#top > div > img {
+  width: 75px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.editors-pick-vertial > div#top > div a {
+  text-decoration: none;
+  margin: auto 0 20px 10px;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  line-height: 17px;
+  font-weight: 500;
+  display: block;
+}
+
+.editors-pick-vertial > div#top > div a:hover {
+  text-decoration: underline;
+}
+
+.editors-pick-vertial > div#top > div:last-of-type {
+  background-color: #f6f6f6;
+  height: 76px;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+}
+.editors-pick-vertial > div#top > div:last-of-type img {
+  margin-left: 10px;
+}
+.editors-pick-vertial > div#top::after {
+  content: "";
+  clear: both;
+}
+.editors-pick-vertial > div#bottom {
+  margin-right: 40%;
+}
+
+.editors-pick-vertial > div#bottom button {
+  width: 180px;
+}
+.editors-pick-vertial > div#bottom h2 {
+  color: black;
+  font-weight: 800;
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+
+.editors-pick-vertial > div#bottom p {
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  font-weight: 500;
 }
