@@ -2,6 +2,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  color: #333;
 }
 
 nav {
@@ -14,6 +15,8 @@ nav {
   justify-content: flex-start;
   align-items: center;
   border-bottom: 1px solid rgb(243, 243, 243);
+  z-index:3;
+  background-color: white;
 }
 
 nav *:hover {
@@ -76,7 +79,14 @@ header h1 {
   height: 80px;
   width: 100%;
   margin-top: 100px;
-  background: #284;
+  display: inline-block;
+  max-width: 346.152px;
+  margin-left: 28%;
+  color: #121212;
+  font-weight: 700;
+  font-style: italic;
+
+
 }
 header div {
   margin: 0 auto;
@@ -91,9 +101,9 @@ header div img {
 
 article {
   width: 80%;
-  height: 1000px;
-  background: #872;
+  height: 100%;
   float: left;
+
 }
 .editors-pick-vertial {
   width: 20%;
@@ -141,4 +151,80 @@ footer {
   height: 20%;
   background: #999;
   margin: 0 auto;
+}
+
+header > div >p{
+  color: #666;
+  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  text-align: left;
+  font-size: 14px;
+}
+.light-gray{
+color: #888;
+font-size: 13px;
+}
+.social-media{
+  width: 27px;
+  background-color: #eee;
+  text-align: center;
+  border-radius: 100%;
+  padding: 5px;
+  vertical-align: middle;
+  border: 1px solid #eee;
+   float: right;
+   margin-left: 15px;
+}
+.social-media:hover{
+  background-color: white;
+  cursor: pointer;
+}
+article > section{
+  margin-left: 33%;
+  margin-right: 100px;
+}
+#by-dennis >h3 >span{
+  text-decoration: underline;
+  text-decoration-color:#ccc;
+  color: #333;
+}
+#by-dennis >h3 >span:hover{
+  text-decoration: none;
+}
+
+article >section:nth-of-type(1) span:nth-of-type(1){
+ color: #333;
+ font-weight: 100;
+
+}
+.content{
+  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  font-size: 17px;
+  color: #222;
+}
+.in-inflation > *{
+ float: left;
+ font-size: 14px;
+ line-height: 17px;
+ font-weight: 300;
+ font-family: font-family: nyt-franklin,arial,helvetica,sans-serif;
+ width: 163px;
+ height: 300px;
+ margin:15px;
+ margin-left: 0;
+
+}
+.in-inflation > div:nth-child(4n){
+  width: 70px;
+  overflow: hidden;
+  margin-right: 0;
+}
+h3 ,strong{
+  color: black;
+}
+img[src*="inflation"]{
+  height: 95px;
+}
+.in-inflation::after{
+  clear: both;
+  content: "";
 }
