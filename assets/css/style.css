@@ -350,19 +350,18 @@ button:hover {
   height: 300px;
   margin-left: 3%;
 }
-.more> div >div> img{
-  width:100%;
-  height:181px;
-  
+.more > div > div > img {
+  width: 100%;
+  height: 181px;
 }
-.image-wrap >span{
+.image-wrap > span {
   font-size: 10px;
-  color:rgb(153,153 ,153);
-  float:right;
-  }
+  color: rgb(153, 153, 153);
+  float: right;
+}
 
-.more> div > h2{
-  color:#000;
+.more > div > h2 {
+  color: #000;
   text-align: left;
   font-size: 18px;
   line-height: 22px;
@@ -371,36 +370,35 @@ button:hover {
   font-weight: 700;
 }
 
-.more> div > h2:hover{
-  color:#666;
+.more > div > h2:hover {
+  color: #666;
   cursor: pointer;
 }
-.more::after{
+.more::after {
   content: "";
   clear: both;
 }
-.editors{
+.editors {
   margin-left: 5%;
   width: 70%;
   font-family: inherit;
   color: #000;
   font-size: 18px;
-  
 }
-.editors > *{
+.editors > * {
   width: 272px;
   height: 300px;
   float: left;
 }
-.editors > div:nth-of-type(2){
-margin-left: 4%;
-margin-right: 2.5%;
+.editors > div:nth-of-type(2) {
+  margin-left: 4%;
+  margin-right: 2.5%;
 }
-img[alt*="more"]{
+img[alt*="more"] {
   width: 100%;
 }
-.editors > div >h2{
-  color:#000;
+.editors > div > h2 {
+  color: #000;
   text-align: left;
   font-size: 18px;
   line-height: 22px;
@@ -408,50 +406,220 @@ img[alt*="more"]{
   font-family: inherit;
   font-weight: 700;
 }
-.editor-image-wrap >span{
+.editor-image-wrap > span {
   font-size: 10px;
-  color:rgb(153,153 ,153);
-  float:right;
-  }
-  
-.editors> div > h2:hover{
-  color:#666;
+  color: rgb(153, 153, 153);
+  float: right;
+}
+
+.editors > div > h2:hover {
+  color: #666;
   cursor: pointer;
 }
-h4{
-  border-top:1px solid black;
+h4 {
+  border-top: 1px solid black;
   width: 900px;
   height: 32px;
   margin-left: 5%;
-  padding-top:19px;
+  padding-top: 19px;
   margin-top: 0;
 }
-h4:hover{
+h4:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-h5{
- width: 100px;
- border-top:1px solid black;
+h5 {
+  width: 100px;
+  border-top: 1px solid black;
 }
 
-.popular > p{ 
-  border-top:1px solid silver;
+.popular > p {
+  border-top: 1px solid silver;
   margin-top: 10px;
-  padding-top:20px;
+  padding-top: 20px;
   font-size: 14px;
   font-weight: 700;
   color: rgb(18, 18, 18);
-  font-family:nyt-cheltenham, georgia, "times new roman", times, serif;
+  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
 }
-h6 >span{
-  border-top:1px solid black;
+h6 > span {
+  border-top: 1px solid black;
   height: 32px;
-  padding-top:19px;
+  padding-top: 19px;
   margin-right: 25%;
   font-size: 14px;
   width: 240px;
   position: absolute;
-  transform: translate(0px,-99px);
+  transform: translate(0px, -99px);
   width: 350px;
+}
+footer {
+  width: 93%;
+  height: 450px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-top: 5px;
+  border-top: 2.5px solid rgb(226, 226, 226);
+  background: white;
+}
+#news,
+#opinion,
+#arts,
+#living,
+#more,
+#subscribe {
+  float: left;
+  width: 13%;
+  height: 100%;
+  margin-right: 20px;
+}
+footer div:last-of-type {
+  width: 20%;
+  margin-left: 100px;
+  border-left: 1px solid rgb(226, 226, 226);
+  padding-left: 15px;
+}
+
+footer > div:first-of-type a {
+  float: right;
+  color: rgb(98, 136, 165);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px;
+  text-decoration: none;
+}
+footer > div > img {
+  cursor: pointer;
+}
+footer > div:first-of-type a::after {
+  content: "";
+  clear: both;
+}
+#news h3,
+#opinion h3,
+#arts h3,
+#living h3,
+#more h3,
+#subscribe h3 {
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+  font-weight: 700;
+  height: 25px;
+  line-height: 15px;
+  text-transform: uppercase;
+  width: 150px;
+  margin: 15px auto -15px 0;
+}
+footer ul {
+  text-transform: capitalize;
+  width: 150px;
+  font-size: 14px;
+  font-weight: 500;
+  height: 25px;
+  line-height: 25px;
+  list-style: none;
+  margin-left: 0;
+}
+footer ul a {
+  color: #333;
+  text-decoration: none;
+}
+footer li {
+  margin-left: -40px;
+  cursor: pointer;
+}
+footer li:hover {
+  text-decoration: underline;
+}
+#subscribe div {
+  width: 100%;
+  height: auto;
+  margin: 10px 5px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#subscribe li {
+  margin: 0;
+  list-style: none;
+  margin: 5px 0px;
+  text-transform: capitalize;
+  width: 150px;
+}
+
+#subscribe #sub-top li {
+  margin: 0;
+  list-style: none;
+  margin: 5px 0px;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  text-transform: capitalize;
+  width: 165px;
+  font-size: 16px;
+  font-weight: 700;
+  height: 25px;
+  line-height: 15px;
+  padding-bottom: 0px;
+  text-decoration: none;
+}
+
+#subscribe #sub-top li:hover {
+  text-decoration: underline;
+}
+div#sub-mid {
+  margin-top: -10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding-bottom: 3px;
+  width: 100%;
+}
+#subscribe #sub-mid li,
+#subscribe #sub-bottom li {
+  width: 150px;
+  font-size: 11px;
+  font-weight: 500;
+  height: 13px;
+  line-height: 15px;
+  text-decoration: none;
+}
+
+#subscribe #sub-mid li:hover,
+#subscribe #sub-bottom li:hover {
+  text-decoration: underline;
+}
+#sub-bottom {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+#other-links::after {
+  content: "";
+  clear: both;
+}
+footer {
+  position: relative;
+}
+#copyright {
+  position: absolute;
+  bottom: 0px;
+  margin: 12px auto 20px auto;
+  border-top: 1px solid rgb(226, 226, 226);
+  border-left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#copyright a {
+  text-decoration: none;
+  font-size: 11px;
+  margin: 10px;
+  color: rgb(153, 153, 153);
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  white-space: nowrap;
+  padding: 5px 0px;
+}
+
+#copyright a:hover {
+  text-decoration: underline;
 }
