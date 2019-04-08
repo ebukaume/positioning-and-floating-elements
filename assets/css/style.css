@@ -23,11 +23,11 @@ nav *:hover {
   cursor: pointer;
 }
 
-#menu,
-#brand {
+.menu,
+.brand {
   margin: 10px 20px;
 }
-#brand {
+.brand {
   height: 18px;
   font-size: 14.25px;
   line-height: 19px;
@@ -36,17 +36,17 @@ nav *:hover {
   font-family: nyt-franklin, helvetica, arial, sans-serif;
   color: black;
 }
-#brand a {
+.brand a {
   text-decoration: none;
   color: inherit;
 }
-#brand a:hover {
+.brand a:hover {
   text-decoration: underline;
 }
-#search {
+.search {
   margin: 15px;
 }
-#banner {
+.banner {
   margin: 20%;
 }
 nav button {
@@ -63,11 +63,11 @@ nav button {
   text-transform: uppercase;
   margin: 3px;
 }
-#subscribe-btn {
+.subscribe-btn {
   margin-left: 8%;
   width: 89.5px;
 }
-#login-btn {
+.login-btn {
   width: 63.41px;
 }
 nav main {
@@ -130,13 +130,6 @@ footer {
   height: 60px;
   margin: 0 auto;
   background: #157;
-}
-
-.copyright {
-  width: 60%;
-  height: 20%;
-  background: #999;
-  margin: 0 auto;
 }
 
 header > div > p {
@@ -457,25 +450,20 @@ footer {
   width: 93%;
   height: 450px;
   margin: 0 auto;
-  margin-top: 30px;
-  padding-top: 5px;
-  border-top: 2.5px solid rgb(226, 226, 226);
+  margin-top: 20px;
+  padding-top: 8px;
+  border-top: 2px solid rgb(226, 226, 226);
   background: white;
 }
-#news,
-#opinion,
-#arts,
-#living,
-#more,
-#subscribe {
+.footer-item {
   float: left;
   width: 13%;
   height: 100%;
   margin-right: 20px;
 }
-footer div:last-of-type {
+footer div.footer-item:last-of-type {
   width: 20%;
-  margin-left: 100px;
+  margin-left: auto;
   border-left: 1px solid rgb(226, 226, 226);
   padding-left: 15px;
 }
@@ -496,12 +484,7 @@ footer > div:first-of-type a::after {
   content: "";
   clear: both;
 }
-#news h3,
-#opinion h3,
-#arts h3,
-#living h3,
-#more h3,
-#subscribe h3 {
+div.footer-item h3 {
   color: rgb(51, 51, 51);
   font-size: 13px;
   font-weight: 700;
@@ -532,57 +515,47 @@ footer li {
 footer li:hover {
   text-decoration: underline;
 }
-#subscribe div {
+
+div.subscribe div {
   width: 100%;
-  height: auto;
-  margin: 10px 5px 10px 0px;
+  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-#subscribe li {
-  margin: 0;
+div.subscribe li {
   list-style: none;
   margin: 5px 0px;
   text-transform: capitalize;
   width: 150px;
 }
 
-#subscribe #sub-top li {
+div.subscribe .sub-top li {
   margin: 0;
   list-style: none;
-  margin: 5px 0px;
   color: rgb(0, 0, 0);
   display: inline-block;
   text-transform: capitalize;
   width: 165px;
+  height: 20px;
   font-size: 16px;
   font-weight: 700;
-  height: 25px;
-  line-height: 15px;
   padding-bottom: 0px;
   text-decoration: none;
 }
 
-#subscribe #sub-top li:hover {
+div.subscribe .sub-top li:hover {
   text-decoration: underline;
 }
-div#sub-mid {
-  margin-top: -10px;
+
+div.sub-mid {
+  padding-top: 50px;
   padding-bottom: 3px;
   width: 100%;
 }
-#subscribe #sub-mid ul {
-  margin-top: 100px;
-}
-#subscribe #sub-bottom {
-  margin-top: 20px;
-  padding-top: -5px;
-  border-top: 1px solid rgb(226, 226, 226);
-}
-#subscribe #sub-mid li,
-#subscribe #sub-bottom li {
+div.subscribe .sub-mid li,
+div.subscribe .sub-bottom li {
   width: 150px;
   font-size: 11px;
   font-weight: 500;
@@ -591,14 +564,18 @@ div#sub-mid {
   text-decoration: none;
 }
 
-#subscribe #sub-mid li:hover,
-#subscribe #sub-bottom li:hover {
+div.subscribe .sub-mid li:hover,
+div.subscribe .sub-bottom li:hover {
   text-decoration: underline;
 }
-#sub-bottom {
+div.subscribe > h3 {
+  margin-left: 40px;
+}
+div.sub-bottom {
   border-left: 0;
-  margin-left: 0;
   padding-left: 0;
+  margin-top: 25px;
+  border-top: 1px solid rgb(226, 226, 226);
 }
 #other-links::after {
   content: "";
@@ -607,26 +584,26 @@ div#sub-mid {
 footer {
   position: relative;
 }
-#copyright {
+footer > div.copyright {
   position: absolute;
   bottom: 0px;
-  margin: 12px auto 20px auto;
+  margin: 32px auto 20px auto;
   border-top: 1px solid rgb(226, 226, 226);
   border-left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-#copyright a {
+footer > div.copyright a {
   text-decoration: none;
   font-size: 11px;
   margin: 10px;
   color: rgb(153, 153, 153);
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-family: helvetica, arial, sans-serif;
   white-space: nowrap;
   padding: 5px 0px;
 }
 
-#copyright a:hover {
+footer div.copyright a:hover {
   text-decoration: underline;
 }

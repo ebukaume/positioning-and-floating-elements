@@ -27,7 +27,7 @@ $ cd positioning-and-floating-elements
 
 ## Deployment
 
-The demo page can be found [HERE](https://raw.githack.com/ebukaume/positioning-and-floating-elements/dev/index.html/)
+The demo page can be found [HERE](https://raw.githack.com/ebukaume/positioning-and-floating-elements/dev/index.html)
 
 ## Contributors
 
