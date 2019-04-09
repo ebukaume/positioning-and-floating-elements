@@ -33,7 +33,7 @@ nav *:hover {
   line-height: 19px;
   letter-spacing: 0.7px;
   font-weight: 700;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-family: helvetica, arial, sans-serif;
   color: black;
 }
 .brand a {
@@ -184,24 +184,26 @@ article > section:nth-of-type(1) span:nth-of-type(1) {
   font-size: 13px;
   line-height: 17px;
   font-weight: 300;
-  font-family: nyt-franklin, arial, helvetica, sans-serif;
-  width: 162px;
+  font-family: arial, helvetica, sans-serif;
+  width: 26%;
   height: 300px;
   margin: 10px 13px 50px 0;
 }
 .in-inflation > div:nth-child(4n) {
-  width: 70px;
+  width: 13%;
+  height: 310px;
   overflow: hidden;
   margin-right: 0;
 }
+
 h3,
 strong {
   color: black;
 }
 img[src*="inflation"] {
-  height: 95px;
+  max-height: 75px;
 }
-.in-inflation::after {
+div.clear-float {
   content: "";
   clear: both;
 }
@@ -214,7 +216,7 @@ hr {
 hr + p {
   font-weight: 500;
   font-size: 14px;
-  font-family: nyt-franklin, arial, helvetica, sans-serif;
+  font-family: arial, helvetica, sans-serif;
 }
 iframe {
   margin-top: 30px;
